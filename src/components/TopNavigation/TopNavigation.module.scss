@@ -1,0 +1,58 @@
+.topNav {
+  display: flex;
+  align-items: right;
+  background-color: black;
+
+  .paths {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0;
+    color: #f9f9f9;
+    list-style: none;
+    transition-duration: 0.5s;
+    font-size: 14pt;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+    }
+    input {
+      border-radius: 15px;
+      height: 30px;
+      width: 235px;
+      font-size: 14pt;
+      margin-right: 6px;
+    }
+
+    .dropdown {
+      text-align: center;
+      align-items: center;
+      ul {
+        display: none;
+      }
+      &:hover {
+        ul {
+          display: block;
+          position: absolute;
+          li {
+            list-style: none;
+            &:hover {
+              color: white;
+              background-color: red;
+              font-family: inherit;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    li {
+      margin-right: 3em;
+    }
+  }
+}
