@@ -2,6 +2,14 @@
   display: flex;
   align-items: right;
   background-color: black;
+  height: 60px;
+  margin-top: 10px;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 8px;
+  }
 
   .paths {
     display: flex;
@@ -29,8 +37,7 @@
     }
 
     .dropdown {
-      text-align: center;
-      align-items: center;
+      position: relative;
       ul {
         display: none;
       }
@@ -38,13 +45,15 @@
         ul {
           display: block;
           position: absolute;
+          margin-right: 50%;
+          width: 160px;
+          margin-right: 150px;
           li {
             list-style: none;
             &:hover {
               color: white;
               background-color: red;
               font-family: inherit;
-              margin: 0;
             }
           }
         }
@@ -55,4 +64,26 @@
       margin-right: 3em;
     }
   }
+}
+
+.inputIcon i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 5px;
+  color: black;
+  min-width: 40px;
+  text-align: center;
+}
+
+.inputField {
+  width: 150%;
+  padding-left: 10px;
+  text-align: center;
 }
