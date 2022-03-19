@@ -14,11 +14,7 @@ export default function Home() {
         title='Check movie schedule with your choice
         Movie, Cinema, Show Type or Time.'
       />
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href='https://nextjs.org'>Next.js!</a>
-        </h1>
-      </main>
+      <main className={styles.main}></main>
     </div>
   );
 }
