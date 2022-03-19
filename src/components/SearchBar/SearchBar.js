@@ -1,4 +1,5 @@
 import styles from './SearchBar.module.scss';
+import { RiArrowDropDownLine } from 'react-icons/ri';
 
 const mapLocations = (locations) => {
   return locations.map((item, i) => (
@@ -15,12 +16,17 @@ const SearchBar = ({ title, locations }) => {
       <div className={styles.searchCard}>
         <div className={styles.dropdown}>
           <p>Choose Location:</p>
-          <button>Toronto</button>
+          <button>
+            Toronto
+            <i className={styles.icon}>
+              <RiArrowDropDownLine />
+            </i>
+          </button>
           <div className={styles.dropdownContent}>
             {mapLocations(locations)}
           </div>
-          <button className={styles.findBtn}>Find</button>
         </div>
+        <button className={styles.findBtn}>Find</button>
       </div>
     </div>
   );
